@@ -1,0 +1,14 @@
+# railway.toml — Configuração de deploy no Railway
+[build]
+builder = "nixpacks"
+buildCommand = "npm install"
+
+[deploy]
+startCommand = "npm start"
+restartPolicyType = "on_failure"
+restartPolicyMaxRetries = 3
+
+[environments.production]
+  [environments.production.variables]
+  NODE_ENV = "production"
+  PORT = "3000"
