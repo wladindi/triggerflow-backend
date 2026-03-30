@@ -1,0 +1,22 @@
+{
+  "name": "triggerflow",
+  "version": "0.1.0",
+  "description": "Gatilhos inteligentes com IA para Instagram e WhatsApp",
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "tunnel": "npx localtunnel --port 3000"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.45.0",
+    "express": "^4.21.0"
+  },
+  "devDependencies": {
+    "localtunnel": "^2.0.2"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
